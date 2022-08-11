@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 :root{
-    --green:#27ae60;
+    --blue:#3160cf;
     --black:#444;
     --light-color:#777;
     --bg-color:#e6e6e6;
@@ -62,7 +62,7 @@ section{
 
 .btn:hover{
     box-shadow: var(--box-shadow-inset);
-    color:var(--green);
+    color:var(--blue);
 }
 
 .heading{
@@ -74,7 +74,7 @@ section{
 }
 
 .heading span{
-    color:var(--green);
+    color:var(--blue);
     text-transform: uppercase;
 }
 
@@ -105,7 +105,7 @@ section{
 }
 
 .header .user p{
-    color:var(--green);
+    color:var(--blue);
     font-size: 1.5rem;
 }
 
@@ -125,8 +125,25 @@ section{
 
 .header .navbar a:hover{
     box-shadow: var(--box-shadow-inset);
-    color: var(--green);
+    color: var(--blue);
 }
+
+.message{
+    position: sticky;
+    top:2rem;
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    font-size: 2rem;
+ }
+ 
+ .message i{
+    cursor: pointer;
+ }
 
 #menu-btn{
     position: fixed;
@@ -146,7 +163,7 @@ section{
 }
 
 #menu-btn:hover{
-    color:var(--green);
+    color:var(--blue);
     box-shadow: var(--box-shadow-inset);
 }
 
@@ -167,7 +184,7 @@ section{
 }
 
 #theme-toggler:hover{
-    color:var(--green);
+    color:var(--blue);
     box-shadow: var(--box-shadow-inset);
 }
 
@@ -188,7 +205,7 @@ section{
 
 .home .content p{
     font-size: 2rem;
-    color:var(--green);
+    color:var(--blue);
     padding-bottom: .5rem;
 }
 
@@ -213,7 +230,7 @@ section{
 
 .home .share a:hover{
     box-shadow: var(--box-shadow-inset);
-    color:var(--green);
+    color:var(--blue);
 }
 
 .about .row{
@@ -261,7 +278,7 @@ section{
 }
 
 .about .row .content h3 span{
-    color:var(--green);
+    color:var(--blue);
 }
 
 .about .row .content p{
@@ -299,7 +316,7 @@ section{
 .about .row .progress .bar span{
     display: block;
     height: 100%;
-    background: var(--green);
+    background: var(--blue);
     border-radius: 5rem;
 }
 
@@ -382,7 +399,7 @@ section{
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
+    background: var(--blue);
     z-index: -1;
     clip-path: circle(9rem at 5% 0%);
     transition: .3s linear;
@@ -485,7 +502,7 @@ section{
 }
 
 .credits span{
-    color: var(--green);
+    color: var(--blue);
 }
 
 
