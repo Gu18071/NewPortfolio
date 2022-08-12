@@ -275,6 +275,8 @@ section{
     font-size: 3.5rem;
     color:var(--black);
     line-height: 1.8;
+    text-align: center;
+    justify-content: center;
 }
 
 .about .row .content h3 span{
