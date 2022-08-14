@@ -2,7 +2,9 @@
 
 :root{
     --blue:#3160cf;
+    --green: rgb(101, 197, 97);
     --black:#444;
+    --red: rgb(174, 20, 20);
     --light-color:#777;
     --bg-color:#e6e6e6;
     --border:.1rem solid rgba(0,0,0,.2);
@@ -130,21 +132,32 @@ section{
 
 .message{
     position: sticky;
-    top:2rem;
-    max-width: 1200px;
+    top:0;
     margin:0 auto;
-    background-color: lightgreen;
+    max-width: 1200px;
+    background-color: var(--green);
+    padding:2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:2rem;
+    z-index: 10000;
+    gap:1.5rem;
+ }
+ 
+ .message span{
     font-size: 2rem;
+    color:var(--black);
  }
  
  .message i{
     cursor: pointer;
+    color:var(--red);
+    font-size: 2.5rem;
  }
-
+ 
+ .message i:hover{
+    transform: rotate(90deg);
+ }
 #menu-btn{
     position: fixed;
     top:1.5rem; left: 2rem;
