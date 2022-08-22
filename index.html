@@ -1,26 +1,3 @@
-<?php
-
-include 'config.php';
-
-if(isset($_POST['send'])){
-
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $title = mysqli_real_escape_string($conn, $_POST['title']);
-   $msg = mysqli_real_escape_string($conn, $_POST['message']);
-
-   $select_message = mysqli_query($conn, "SELECT * FROM `contato_form` WHERE name = '$name' AND email = '$email' AND title = '$title' AND message = '$msg'") or die('query failed');
-
-   if(mysqli_num_rows($select_message) > 0){
-      $message[] = 'mensagem já enviada!';
-   }else{
-      mysqli_query($conn, "INSERT INTO `contato_form`(name, email, title, message) VALUES('$name', '$email', '$title', '$msg')") or die('query failed');
-      $message[] = 'mensagem enviada com sucesso!';
-   }
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,30 +10,17 @@ if(isset($_POST['send'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- css link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
 
-<?php
-if(isset($message)){
-   foreach($message as $message){
-      echo '
-      <div class="message">
-         <span>'.$message.'</span>
-         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-      </div>
-      ';
-   }
-}
-?>
-    
 <!-- inicio do header -->
 
 <header class="header">
 
     <div class="user">
-        <img src="image/user-img.jpg" alt="">
+        <img src="./image/user-img.jpg" alt="">
         <h3>Gustavo Cianci</h3>
         <p>front-end developer e designer</p>
     </div>
@@ -65,7 +29,6 @@ if(isset($message)){
         <a href="#home">Página inicial</a>
         <a href="#about">Sobre</a>
         <a href="#portfolio">Portfólio</a>
-        <a href="#contato">Contato</a>
     </nav>
 
 </header>
@@ -180,27 +143,10 @@ if(isset($message)){
 
 <!-- fim do portfolio -->
 
-<!-- inicio do contato -->
-
-<section class="contact" id="contato">
-<h1 class="heading" data-aos="fade-up"> <span>Me contacte</span> </h1>
-   <form action="" method="post">
-      <input type="text" name="name" required placeholder="Nome" class="box">
-      <input type="email" name="email" required placeholder="Email" class="box">
-      <input type="text" name="title" required placeholder="Título" class="box">
-      <textarea name="message" class="box" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="Enviar mensagem" name="send" class="btn">
-   </form>
-   <div class="box-container">
-
-</section>
-
-<!-- fim do contato -->
-
 <div class="credits"> Feito por <span>Gustavo Cianci</span> | 2022 </div>
 
 <!-- js arquivo  -->
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>
