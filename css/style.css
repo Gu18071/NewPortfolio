@@ -430,7 +430,7 @@ section{
 
 .portfolio .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: 380px 380px 380px;
     gap:2rem;
 }
 
