@@ -22,13 +22,15 @@
     <div class="user">
         <img src="./image/user-img.jpg" alt="">
         <h3>Gustavo Cianci</h3>
-        <p>front-end developer e designer</p>
+        <p> programador e designer</p>
     </div>
 
     <nav class="navbar">
         <a href="#home">Página inicial</a>
         <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
         <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
     </nav>
 
 </header>
@@ -47,7 +49,7 @@
 
     <div class="content">
         <h3>Gustavo Cianci</h3>
-        <p>Sou front-end developer e designer</p>
+        <p>Sou programador e designer</p>
         <a href="https://github.com/Gu18071" target="_blank" class="btn">Meu Github</a>
     </div>
 
@@ -71,7 +73,7 @@
 
         <div class="content">
             <h3> Meu nome é <span>Gustavo Cianci</span></h3>
-            <p> Olá, tudo bem? Eu estou terminando a graduação de Sistemas para Internet na Faculdade UniAlfa. Não tenho experiência ainda, porque não comecei à trabalhar na área. Gosto de front-end e design.</p>
+            <p> Oi, seja bem-vindo! Eu sou graduado em Sistemas para Internet na Faculdade UniAlfa (2020-2022). Já trabalhei para a empresa AgroLolli por 6 meses como designer e já desenvolvi um site web para a empresa VetCenter. Eu também dei um curso sobre lógica de programação na Faculdade UniAlfa em 2022. Estou em busca de crescer cada vez mais na área de programação e quero adquirir mais conhecimentos.</p>
         </div>
 
     </div>
@@ -110,6 +112,43 @@
 
 <!-- fim do sobre -->
 
+<!-- começo do serviço  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Meus <span>serviços</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>Web design e responsividade</h3>
+            <p>Domino bem o CSS e já tive contato com Figma.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Design gráfico</h3>
+            <p>Sei mexer com ferramentas como Adobe Photoshop, Adobe Premiere e Adobe AfterEffects.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-desktop"></i>
+            <h3>Desenvolvimento web</h3>
+            <p>Desenvolvo sites em PHP e JavaScript (React e NextJS).</p>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-mobile"></i>
+            <h3>Desenvolvimento mobile</h3>
+            <p>Faço aplictivos em React Native.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- fim do serviço -->
+
 <!-- inicio do portfolio  -->
 
 <section class="portfolio" id="portfolio">
@@ -119,14 +158,28 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="https://images.unsplash.com/photo-1633793675529-58eecb6ea16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5ldGZsaXh8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="./image/pokemon.png" alt="">
+            <div class="content">
+                <a href="https://guciancipokemon.netlify.app/" target="_blank" class="btn">Pokeben</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./image/quadrotarefas.png" alt="">
+            <div class="content">
+                <a href="https://gucianciquadrotarefas.netlify.app/" target="_blank" class="btn">Quadro-tarefas</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./image/netflix.png" alt="">
             <div class="content">
                 <a href="https://netflixclonegucianci.netlify.app/" target="_blank" class="btn">Netflix clone</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="./image/ecommerce.png" alt="">
             <div class="content">
                 <a href="https://siteecommercegucianci.netlify.app/" target="_blank" class="btn">E-commerce</a>
             </div>
@@ -149,6 +202,24 @@
 </section>
 
 <!-- fim do portfolio -->
+
+<!-- contato começa -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Entre em</span> contato </h1>
+
+    <form action="">
+        <input type="text" placeholder="Nome" class="box">
+        <input type="email" placeholder="E-mail" class="box">
+        <input type="text" placeholder="Assunto" class="box">
+        <textarea name="" class="box" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar mensagem" class="btn">
+    </form>
+
+</section>
+
+<!-- contato termina -->
 
 <div class="credits"> Feito por <span>Gustavo Cianci</span> | 2022 </div>
 
